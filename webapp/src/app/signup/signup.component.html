@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <div class="card_title">
+            <h1>Create Account</h1>
+            <span>Already have an account? <a href="login">Sign In</a></span>
+          </div>
+          <div class="form">
+          <form>
+            <input type="text" [value]="username" placeholder=Username (input)="username=($any($event.target).value)"  required>
+            <input type="password" [value]="password" placeholder=Password  (input)="password=($any($event.target).value)" required>
+            <input type="email" [value]="email"  placeholder=email (input)="email=($any($event.target).value)" required>
+            <button mat-stroked-button (click)="navigate()">Sign-up</button>
+
+            </form>
+          </div>
+          <div class="card_terms">
+              <input type="checkbox" name="" id="terms" > <span>I have read and agree to the <a href="">Terms of Service</a></span>
+          </div>
+        </div>
+      </div>
+     
+
+</body>
+</html>
